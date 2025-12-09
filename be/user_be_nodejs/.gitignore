@@ -29,3 +29,7 @@ coverage
 *.sw?
 
 *.tsbuildinfo
+
+# Swagger 自动生成的文件
+src/swagger/schemas.auto.js
+src/swagger/swagger.auto.js
