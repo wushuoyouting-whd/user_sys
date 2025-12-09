@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",          // 编译后的代码使用 ES2022 模块语法；或者commonjs
+    "moduleResolution": "node",  // 按 Node.js ESM 规则去解析路径（要带扩展名）；以上成套出现缺一不可
+    "target": "ES2022",          // 语法降级到 ES2022（Node 16+ 原生支持）
+    "outDir": "dist",            // 编译产物丢到 dist 目录,
+    "rootDir": "src",            // 以 src 为根，保持目录结构,
+    "lib": ["ES2020"],            // 使用 ES2020 标准库（包含 Promise、Map、Set 等）
+    "experimentalDecorators": true,   // 启用装饰器支持，让“@”语法合法；
+    "emitDecoratorMetadata": true,    // 启用装饰器元数据支持，让一些框架能通过反射获取类型信息
+    "esModuleInterop": true,           // 允许 import fs from 'fs' 而不是 import * as fs
+    "allowSyntheticDefaultImports": true, // 与上一项配套，减少第三方库类型冲突
+    "skipLibCheck": true,                   // 跳过 node_modules 里的类型检查，提速
+    "forceConsistentCasingInFileNames": true // 强制文件名大小写一致（防止mac/windows上因大小写不一致找不到模块）
+  },
+  "include": ["src"]
+}
