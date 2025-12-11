@@ -7,6 +7,7 @@
             <el-icon><User /></el-icon>
             用户管理系统
           </h1>
+          <BackendType />
         </div>
       </el-header>
       
@@ -20,6 +21,7 @@
 <script setup>
 import { User } from '@element-plus/icons-vue'
 import UserList from './components/UserList.vue'
+import BackendType from './components/BackendType.vue'
 </script>
 
 <style scoped>
